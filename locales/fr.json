@@ -28,13 +28,12 @@
       "seconds": "Secondes"
     },
     "breadcrumbs": {
-      "home": "Domicile",
+      "home": "Accueil",
       "home_link_title": "Retour à la page d’accueil"
     },
     "password_page": {
       "opening_soon": "Ouverture prochaine"
     },
-    "social": {},
     "search": {
       "title": "Rechercher dans notre magasin",
       "placeholder": "Rechercher des produits",
@@ -120,19 +119,19 @@
   },
   "cart": {
     "general": {
-      "title": "Caddie",
+      "title": "Panier",
       "remove": "Enlever",
       "note": "Instructions spéciales pour le vendeur",
       "drawer_note": "Note",
       "shipping": "Livraison",
       "drawer_coupon": "Coupon",
       "subtotal": "Sous-total",
-      "taxes_and_shipping_at_checkout": "Taxes et frais de port calculés à la caisse",
+      "taxes_and_shipping_at_checkout": "Taxes et frais de port calculés à la prochaine étape",
       "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\">expédition</a> calculée à la caisse",
       "taxes_included_but_shipping_at_checkout": "Taxes incluses et frais de port calculés à la caisse",
       "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\">expédition</a> calculé à la caisse.",
       "enter_discount_code": "Entrez le code de réduction ici",
-      "checkout": "Vérifier",
+      "checkout": "Passer commande",
       "viewcart": "Voir le panier",
       "empty": "Votre panier est actuellement vide.",
       "coupon_title": "Ajouter un code de réduction",
@@ -148,7 +147,11 @@
       "delivery_days": {
         "one": "jour",
         "other": "Jours"
-      }
+      },
+      "gift_wrapping_html": "",
+      "gift_note_placeholder": "",
+      "cart_error": "",
+      "cart_quantity_error_html": ""
     },
     "label": {
       "product": "Produit",
@@ -415,7 +418,8 @@
         "pick_up_unavailable_at_html": "Ramassage actuellement indisponible à <span class=\"color-foreground\">{{ location_name }}</span>",
         "unavailable": "Impossible de charger la disponibilité du ramassage",
         "refresh": "Rafraîchir"
-      }
+      },
+      "quantity_input_label": ""
     }
   },
   "gift_cards": {

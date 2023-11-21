@@ -8,13 +8,18 @@
     },
     "maps": {
       "type": "maps",
+      "disabled": true,
       "settings": {
         "container": "container",
         "map_height": "large",
         "textx": "40.6700",
         "texty": "-73.9400",
         "zoom": "11",
-        "text2": "New York"
+        "text2": "New York",
+        "content_position": "middle-left",
+        "text_alignment": "left",
+        "use_content_in_container": false,
+        "animations": "inherit"
       }
     },
     "contact-form": {
@@ -23,15 +28,15 @@
         "text-block-1": {
           "type": "textblock",
           "settings": {
-            "title": "Address",
-            "content": "<p>7895 Piermont Dr NE Albuquerque, NM 198866, <a href=\"#\">See Our Stores</a></p>"
+            "title": "Adresse",
+            "content": "<p>54 rue de touraine, 95100 Argenteuil</p>"
           }
         },
         "text-block-2": {
           "type": "textblock",
           "settings": {
             "title": "Information",
-            "content": "<p>+391 (0)35 2568 4593</p><p>hello@domain.com</p>"
+            "content": "<p>Do you have a question about the status of your order or the purchase you are considering?</p><p>Email: <a href=\"mailto:contact@al-niya.fr\" title=\"mailto:contact@al-niya.fr\">contact@al-niya.fr</a></p>"
           }
         },
         "text-block-3": {
@@ -43,8 +48,8 @@
         "text-block-4": {
           "type": "textblock",
           "settings": {
-            "title": "We're Open",
-            "content": "<p>Our store has re-opened for shopping, exchanges</p><p>Every day 11am to 7pm</p>"
+            "title": "Service client",
+            "content": "<ul><li>Fermé : Pendant le week-end / 3 jours pendant la EID / Jours fériés</li><li>Ouvert : Du Lundi-Vendredi 12H-15H</li></ul>"
           }
         }
       },
@@ -56,14 +61,14 @@
       ],
       "settings": {
         "container": "container",
-        "title": "We would love to hear from you.",
-        "description": "<p>If you’ve got great products your making or looking to work with us then drop us a line.</p>"
+        "title": "FORMULAIRE DE CONTACT",
+        "description": "<p>Si vous souhaitez entrer en contact avec l'équipe du site il vous suffit de remplir ce formulaire.</p>",
+        "show_name": true,
+        "show_phone": true,
+        "show_signup_email": false,
+        "animations": "inherit"
       }
     }
   },
-  "order": [
-    "main",
-    "maps",
-    "contact-form"
-  ]
+  "order": ["main", "maps", "contact-form"]
 }

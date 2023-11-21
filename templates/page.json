@@ -1,11 +1,14 @@
 {
-  "name": "Page",
   "sections": {
     "main": {
-      "type": "page"
+      "type": "page",
+      "custom_css": [
+        "@media only screen and (min-width: 600px) {h2 {font-size: 32px; } h1 {font-size: 48px; }}",
+        "h2 {font-weight: 700; letter-spacing: 1px; text-transform: capitalize;}",
+        "h1 {font-weight: 900; letter-spacing: 1px; text-transform: capitalize;}"
+      ],
+      "settings": {}
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main"]
 }

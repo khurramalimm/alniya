@@ -4,11 +4,12 @@
   "sections": {
     "annoucement": {
       "type": "annoucement",
+      "custom_css": ["span {font-weight: 400;}"],
       "settings": {
         "show_announcement": true,
-        "homepage_only": true,
-        "show_close": true,
-        "message": "<span class=\"font-medium\" style=\"font-size: 14px;\">Free Delivery on orders over $200.<\/span>",
+        "homepage_only": false,
+        "show_close": false,
+        "message": "<span class=\"m:font-semi-bold\">Livraison gratuite à partir de 79 €</span>",
         "message_link": "",
         "show_divider": false
       }
@@ -18,54 +19,60 @@
       "blocks": {
         "5e153016-a9d7-46c9-a10e-30d16446793d": {
           "type": "topbar",
+          "disabled": true,
           "settings": {
             "show_divider": true,
-            "show_phone_numb": false,
-            "show_email": false,
-            "show_social_links": true,
-            "show_stores_page": false,
+            "show_phone_numb": true,
+            "show_email": true,
+            "show_social_links": false,
+            "show_stores_page": true,
             "show_currency_switcher": true,
             "show_country_selector": false,
             "show_language_switcher": true,
-            "alert_message": "<span>Open Doors To A World Of Fashion  |  <a class=\"sf__text-link  ml-1 underline\" href=\"#\">Discover More<\/a><span><\/span><\/span>"
+            "alert_message": ""
           }
         }
       },
-      "block_order": [
-        "5e153016-a9d7-46c9-a10e-30d16446793d"
+      "block_order": ["5e153016-a9d7-46c9-a10e-30d16446793d"],
+      "custom_css": [
+        ".m-select-custom--trigger-text {text-transform: capitalize;}",
+        ".m-select-custom--option {text-transform: capitalize; opacity: 1; color: black;}",
+        "svg {fill: #f5a361;}",
+        ".m-search-form__button svg,.m-select-custom--trigger-icon svg {fill: black;}",
+        ".m-header__search.m-search-form--full {min-width: 285px;}"
       ],
       "settings": {
         "header_design": "logo-center-menu-left",
-        "container": "container-fluid",
+        "container": "w-full",
         "header_sticky": true,
         "transparent_on_top": false,
-        "logo_text": "MINIMOG",
-        "logo": "",
-        "logo_transparent": "",
+        "logo_text": "Al Niya",
+        "logo": "shopify://shop_images/al-niya-logo-hor.svg",
+        "logo_mobile": "shopify://shop_images/al-niya-logo-mobile-symbole.svg",
         "logo_svg": "",
         "logo_mobile_svg": "",
         "logo_transparent_svg": "",
-        "logo_max_width": 145,
-        "sticky_logo_max_width": 145,
-        "mobile_logo_max_width": 110,
-        "main_menu": "main-menu",
+        "logo_max_width": 260,
+        "sticky_logo_max_width": 260,
+        "mobile_logo_max_width": 100,
+        "main_menu": "mega-menu",
         "secondary_menu": "",
         "mobile_menu": "",
-        "uppercase_parent_level": false,
+        "uppercase_parent_level": true,
         "show_menu_column_divider": true,
-        "search": "show_icon",
+        "search": "show_full",
         "show_account_icon": true,
         "show_cart_icon": true,
         "show_wishlist_icon": true,
         "show_compare_icon": false,
         "show_currency_switcher": false,
         "show_country_selector": false,
-        "show_language_switcher": false
+        "show_language_switcher": true,
+        "mb_show_currency_switcher": false,
+        "mb_show_country_selector": false,
+        "mb_show_language_switcher": true
       }
     }
   },
-  "order": [
-    "annoucement",
-    "header"
-  ]
+  "order": ["annoucement", "header"]
 }

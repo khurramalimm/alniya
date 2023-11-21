@@ -3,3 +3,63 @@
   For example: tracking code, custom css, custom javascript
   All custom code in this file will be kept when updating the theme
 {%- endcomment -%}
+
+<script src="{{ 'lazysizes.min.js' | asset_url }}" async="async"></script>
+
+<script>
+  //add simple support for background images:
+  document.addEventListener('lazybeforeunveil', function(e){
+      var bg = e.target.getAttribute('data-bg');
+      if(bg){
+          e.target.style.backgroundImage = 'url(' + bg + ')';
+      }
+  });
+</script>
+
+<link
+  rel="preload"
+  href="https://cdn.shopify.com/s/files/1/0820/9213/0591/files/Gabarito-Regular.ttf?v=1698047960"
+  as="font"
+  type="font/ttf"
+  crossorigin="anonymous"
+>
+<link
+  rel="preload"
+  href="https://cdn.shopify.com/s/files/1/0820/9213/0591/files/Gabarito-Medium.ttf?v=1698047960"
+  as="font"
+  type="font/ttf"
+  crossorigin="anonymous"
+>
+<link
+  rel="preload"
+  href="https://cdn.shopify.com/s/files/1/0820/9213/0591/files/Gabarito-Bold.ttf?v=1698047960"
+  as="font"
+  type="font/ttf"
+  crossorigin="anonymous"
+>
+<link
+  rel="preload"
+  href="https://cdn.shopify.com/s/files/1/0820/9213/0591/files/Gabarito-Black.ttf?v=1698047960"
+  as="font"
+  type="font/ttf"
+  crossorigin="anonymous"
+>
+
+{% if template contains 'index' %}
+  <link
+    rel="preload"
+    as="image"
+    href="https://820df8.myshopify.com/cdn/shop/files/hero-banner.webp?v=1699353936&width=1100"
+  >
+  <link
+    rel="preload"
+    as="image"
+    href="https://820df8.myshopify.com/cdn/shop/files/hero-banner.webp?v=1699353936&width=2000"
+  >
+  <!--
+    <link rel="preload" as="image" href="https://820df8.myshopify.com/cdn/shop/files/hero-banner-2.webp?v=1699354093&width=1100">
+    <link rel="preload" as="image" href="https://820df8.myshopify.com/cdn/shop/files/hero-banner-2.webp?v=1699354093&width=2000">
+    <link rel="preload" as="image" href="https://820df8.myshopify.com/cdn/shop/files/hero-banner-3.webp?v=1699354201&width=1100">
+    <link rel="preload" as="image" href="https://820df8.myshopify.com/cdn/shop/files/hero-banner-3.webp?v=1699354201&width=2000">
+  -->
+{% endif %}

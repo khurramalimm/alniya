@@ -2,16 +2,23 @@
   "sections": {
     "collection-header": {
       "type": "collection-page-header",
+      "custom_css": [
+        "@media only screen and (min-width: 600px) {h1 {font-size: 48px; }}",
+        "h1 {font-weight: 900; letter-spacing: 1px; text-transform: capitalize;}"
+      ],
       "settings": {
+        "container": "container",
         "layout": "inside",
         "header_height": "small",
         "text_alignment": "center",
         "vertical_alignment": "center",
+        "text_color": "dark",
         "bg_color": "#ffffff",
         "enable_parallax": false,
         "upper_title": false,
         "show_desc": false,
-        "collection_all_desc": ""
+        "collection_all_desc": "",
+        "enable_bg_zoom_effect": true
       }
     },
     "main": {
@@ -23,6 +30,7 @@
             "design_filtergroup": "button",
             "title": "Size",
             "filtergroup": "XS,S,M,L,XL",
+            "show_label": false,
             "use_accordion": false,
             "open_filtergroup": true
           }
@@ -33,6 +41,7 @@
             "design_filtergroup": "color",
             "title": "Colors",
             "filtergroup": "Blue, Red, White ,Black ,Pink ,Silver,Purple,Brown,Yellow,Grey,Green,Tan,Violet,Dark Grey,Beige,Light Blue, Dark Blue, Light Grey, Light Pink, Mint, Rose Gold, Night Blue, Copper, Coral, Rosy Brown",
+            "show_label": false,
             "use_accordion": false,
             "open_filtergroup": true
           }
@@ -42,7 +51,8 @@
           "settings": {
             "design_filtergroup": "default",
             "title": "Prices",
-            "filtergroup": "$0-$50,$50-$100,$100-$150,$150-$200,$200-$300,$300-$400",
+            "filtergroup": "",
+            "show_label": false,
             "use_accordion": false,
             "open_filtergroup": true
           }
@@ -53,6 +63,7 @@
             "design_filtergroup": "inrow",
             "title": "Brands",
             "filtergroup": "Minimog,Retrolie,Abby,Brook,Learts,Vagabond",
+            "show_label": false,
             "use_accordion": false,
             "open_filtergroup": true
           }
@@ -63,6 +74,7 @@
             "design_filtergroup": "inrow",
             "title": "Tags",
             "filtergroup": "Dress,Tops,Shirts,Fashion,Hats,Sandal,Belt,Bags,Snacker,Denim,Minimog,Vagabond,Sunglasses, Beachwear,Vintage",
+            "show_label": false,
             "use_accordion": true,
             "open_filtergroup": true
           }
@@ -75,25 +87,81 @@
         "4903963a-90f0-4fe1-be23-ee4f8749e483",
         "00b3badd-1613-4230-85d8-f87f04306aaa"
       ],
+      "custom_css": [
+        ".m-product-card .m-product-card__title {font-size: 16px;}",
+        ".m-facets .m-facet--product-count {width: 16%;}",
+        ".m-facets-price--ranges {background: linear-gradient( to right, var(--color-bar) var(--from), #f5a361 var(--from), #f5a361 var(--to), var(--color-bar) var(--to) );}",
+        ".m-facets-price--field input {border-color: #f5a361;}",
+        ".m-facets-price {--color: #f5a361;}",
+        ".m-toolbar--column-switcher>button.active, .m-toolbar--column-switcher>button:hover {background-color: #f5a361;}"
+      ],
       "settings": {
         "container": "container-fluid",
         "grid_layout": "grid",
         "grid_columns": "4",
+        "show_columns_switcher": true,
         "pagination_limit": 12,
+        "paginate_type": "paginate",
         "show_sorting": true,
         "show_filter": true,
-        "filters_type": "tags_filter",
+        "filters_type": "storefront_filters",
         "sidebar": "leftColumn",
         "sidebar_title": "Filters",
         "limit_height_widget": false,
-        "paginate_type": "paginate"
+        "limit_height": 300,
+        "change_product_variant_on_fitlering": true,
+        "show_product_count": true,
+        "collapsed_groups": "Brand, Vendor, Size",
+        "color_swatches": "color,colour,couleur,farbe"
+      }
+    },
+    "29cc28ac-b5e2-45bc-b361-ae1e76ec1227": {
+      "type": "custom-content",
+      "blocks": {
+        "0a041c4d-5b68-48e2-8537-346ee26e2bbc": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "{{ collection.description }}",
+            "width": "100%",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": ["0a041c4d-5b68-48e2-8537-346ee26e2bbc"],
+      "custom_css": [
+        "h2 {font-size: 32px; margin-top: 1.5rem; font-weight: 700;}",
+        "@media only screen and (max-width: 600px) {h2 {font-size: 20px; margin-top: 1rem; }}"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": ""
       }
     },
     "recent-viewed": {
       "type": "recent-viewed-products",
+      "custom_css": [
+        ".m-product-card .m-product-card__title {font-size: 16px;}",
+        "@media only screen and (min-width: 600px) {h2 {font-size: 32px; }}",
+        "h2 {font-weight: 700; letter-spacing: 1px; text-transform: capitalize;}"
+      ],
       "settings": {
-        "heading": "Recently Viewed Products",
         "container": "container",
+        "heading": "Derniers Produits Consultés",
+        "heading_size": "h3",
+        "text_align": "left",
+        "limit": 8,
         "columns": 4,
         "column_gap": 30,
         "enable_slider": true
@@ -103,6 +171,7 @@
   "order": [
     "collection-header",
     "main",
+    "29cc28ac-b5e2-45bc-b361-ae1e76ec1227",
     "recent-viewed"
   ]
 }

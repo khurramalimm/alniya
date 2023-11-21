@@ -16,6 +16,17 @@
   endif
 %}
 {{ 'tabs.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .read-more-collection {
+    display: block;
+    margin-top: 10px;
+    text-decoration: underline;
+  }
+  .read-more-collection:hover {
+    text-decoration-thickness: inherit !important;
+  }
+</style>
 <m-product-details-tabs
   class="m-section m-product-details-tabs m:block"
   data-section-type="product-details-tabs"
@@ -60,8 +71,23 @@
                   {% when 'description' %}
                     <div class="rte">
                       {%- assign description = product.description -%}
-                      {{ description }}
+                      <!-- {{ description }} -->
+
+                      {% assign description_words = description | split: ' ' %}
+                      {% assign words_count = description_words.size %}
+
+                      {% if words_count > 15 %}
+                        <div id="truncated">
+                          {{ description | truncatewords: 15, '' }}... <a class="read-more-collection">Read More</a>
+                        </div>
+                        <div id="fullDescription" style="display: none">{{ description }}</div>
+                      {% else %}
+                        <div id="truncated">
+                          {{ description }}
+                        </div>
+                      {% endif %}
                     </div>
+
                   {% when 'reviews' %}
                     <div class="{{ block.settings.container | default: 'container' }}">
                       {% render 'product-reviews-app__snippet', custom_liquid: block.settings.custom_liquid %}
@@ -72,6 +98,7 @@
                   {% when 'liquid' %}
                     {{ block.settings.custom_liquid }}
                   {% else %}
+
                 {% endcase %}
               </div>
             </div>
@@ -260,3 +287,45 @@
   ]
 }
 {% endschema %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      var truncated = document.getElementById('truncated');
+      var fullDescription = document.getElementById('fullDescription');
+      truncated.addEventListener('click', function() {
+          fadeOut(truncated, 100, function() {
+              fadeIn(fullDescription, 100);
+          });
+      });
+  });
+
+  function fadeIn(element, duration) {
+      element.style.transition = "opacity " + duration + "ms";
+      element.style.display = 'block';
+      setTimeout(function() {
+          element.style.opacity = 1;
+      }, 50);
+  }
+
+  function fadeOut(element, duration, callback) {
+      element.style.transition = "opacity " + duration + "ms";
+      element.style.opacity = 0;
+      setTimeout(function() {
+          element.style.display = 'none';
+          if (callback) {
+              callback();
+          }
+      }, duration);
+  }
+</script>
+
+{% if shop.locale == 'fr' %}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var readMoreCollectionDiv = document.querySelector('.read-more-collection');
+      if (readMoreCollectionDiv) {
+        readMoreCollectionDiv.innerHTML = 'En savoir plus';
+      }
+    });
+  </script>
+{% endif %}

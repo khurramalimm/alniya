@@ -46,12 +46,12 @@
     {{ 'grid.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'modules.css' | asset_url | stylesheet_tag }}
-    
+
     {% render 'style-tags' %}
 
     <script src="{{ 'vendor.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'theme-global.js' | asset_url }}" defer="defer"></script>
-    
+
     {%- if settings.animations != 'none' -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
@@ -72,7 +72,9 @@
     {% if template.name == 'product' %}
       data-product-id="{{ product.id }}"
     {% endif %}
-    {% if has_bg %} data-bg="{{ bg_color | color_to_hsl }}"{% endif %}
+    {% if has_bg %}
+      data-bg="{{ bg_color | color_to_hsl }}"
+    {% endif %}
   >
     {% if settings.page_transition %}
       <div class="m-page-transition">
@@ -115,10 +117,12 @@
 
     {%- if settings.show_swatch_option -%}
       <script src="{{ 'product-card-swatch.js' | asset_url }}" defer="defer"></script>
-    {%- endif -%}  
+    {%- endif -%}
 
     {%- if settings.enable_cart_drawer and template != 'cart' -%}
       {% render 'cart-drawer' %}
     {%- endif -%}
+    <!-- <script src="{{ 'jquery.min.js' | asset_url }}" defer="defer"></script> -->
+    <!-- <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script> -->
   </body>
 </html>

@@ -1,15 +1,28 @@
 {
-  "name": "Cart template",
   "sections": {
     "main": {
-      "type": "cart-template"
+      "type": "cart-template",
+      "custom_css": [
+        "@media only screen and (min-width: 600px) {h1 {font-size: 48px; }}",
+        "h1 {font-weight: 900; letter-spacing: 1px; text-transform: capitalize;}",
+        "@media only screen and (min-width: 1024px) {#MinimogCart form {display: flex; } .m-cart__wrapper {/* width: 70%; flex: inherit; */ margin-right: 4rem; } .m-cart__footer--wrapper {padding: 0 2.5rem; } .m-cart__checkout {position: fixed; bottom: 15px; right: 15px; z-index: 9999; height: max-content; }}"
+      ],
+      "settings": {}
     },
     "recent-viewed-products": {
-      "type": "recent-viewed-products"
+      "type": "recent-viewed-products",
+      "custom_css": [".m-product-card__title {font-size: 16px;}"],
+      "settings": {
+        "container": "container",
+        "heading": "Derniers produits consultés",
+        "heading_size": "h3",
+        "text_align": "left",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": 30,
+        "enable_slider": true
+      }
     }
   },
-  "order": [
-    "main",
-    "recent-viewed-products"
-  ]
+  "order": ["main", "recent-viewed-products"]
 }

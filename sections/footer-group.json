@@ -5,52 +5,41 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "7b0bf4c6-3873-4222-b8d6-ce009e710078": {
+        "f9f68495-d8c9-4920-baf5-fb7aaa818b27": {
           "type": "newsletter",
           "settings": {
-            "title": "Let’s get in touch",
-            "description": "Sign up for our newsletter and receive 10% off your",
-            "email_placeholder": "Enter your email",
+            "title": "<span>Newsletter</span>",
+            "description": "Soyez le premier à recevoir nos promotions par email.",
+            "email_placeholder": "Saisir votre adresse mail",
             "form_style": "bordered",
             "show_social": false,
             "show_agree_checkbox": false,
-            "width": "33%",
+            "width": "66%",
             "order_first": true,
             "open_default": true
           }
         },
-        "12ba5a79-51a6-413a-9802-6add59615034": {
+        "7be8d43e-ecc5-411e-90cd-e21b5dee4cfc": {
           "type": "spacing",
           "settings": {
             "width": "16%"
           }
         },
-        "7ebc2f78-975b-4a81-b874-103c3355a866": {
-          "type": "menu",
-          "settings": {
-            "title": "",
-            "width": "25%",
-            "order_first": false,
-            "open_default": false
-          }
-        },
         "49e72833-c68f-4a7b-ab64-3ef0cae99bcb": {
           "type": "menu",
           "settings": {
-            "title": "Information",
+            "menu": "about",
+            "title": "À propos",
             "width": "25%",
             "order_first": false,
             "open_default": false
           }
         },
-        "93571032-b171-4c66-8b3e-96cd91946363": {
-          "type": "our_store",
+        "b58e37df-7e6d-4803-948b-1fe15535bedf": {
+          "type": "menu",
           "settings": {
-            "title": "Our store",
-            "description": "",
-            "show_email": false,
-            "show_phone": false,
-            "show_socials_link": true,
+            "menu": "support",
+            "title": "Support",
             "width": "25%",
             "order_first": false,
             "open_default": false
@@ -58,23 +47,29 @@
         }
       },
       "block_order": [
-        "7b0bf4c6-3873-4222-b8d6-ce009e710078",
-        "12ba5a79-51a6-413a-9802-6add59615034",
-        "7ebc2f78-975b-4a81-b874-103c3355a866",
+        "f9f68495-d8c9-4920-baf5-fb7aaa818b27",
+        "7be8d43e-ecc5-411e-90cd-e21b5dee4cfc",
         "49e72833-c68f-4a7b-ab64-3ef0cae99bcb",
-        "93571032-b171-4c66-8b3e-96cd91946363"
+        "b58e37df-7e6d-4803-948b-1fe15535bedf"
+      ],
+      "custom_css": [
+        ".m-footer--bottom-inner {padding-bottom: 20px;}",
+        ".m-select-custom--trigger-text,.m-select-custom--option {text-transform: capitalize;}",
+        ".m-newsletter-form__input {border-color: #f5a361;}",
+        ".m-footer--block-newsletter .m-newsletter-form--bordered .m-newsletter-form__button {background-color: #f5a361;}"
       ],
       "settings": {
-        "design": "footer-1",
+        "design": "footer-3",
         "container": "container-fluid",
         "bordered": false,
-        "copyright": "© MINIMOG 2023",
+        "copyright": "All Rights Reserved © Al Niya 2023",
         "show_country_selector": false,
         "show_currency_selector": false,
-        "show_language_selector": false,
-        "show_social_links": false,
+        "show_language_selector": true,
+        "show_social_links": true,
         "enable_follow_on_shop": true,
         "show_payment_icons": true,
+        "image_custom_payment": "shopify://shop_images/trustbag.png",
         "payment_icons_width": 300
       }
     },
@@ -86,7 +81,7 @@
         "show_collection_icon": true,
         "show_cart_icon": true,
         "show_search_icon": true,
-        "show_account_icon": false,
+        "show_account_icon": true,
         "show_wishlist_icon": false
       }
     },
@@ -102,7 +97,7 @@
         "block-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Are you 18 years old or older?<\/p>"
+            "text": "<p>Are you 18 years old or older?</p>"
           }
         },
         "block-3": {
@@ -113,24 +108,16 @@
           }
         }
       },
-      "block_order": [
-        "block-1",
-        "block-2",
-        "block-3"
-      ],
+      "block_order": ["block-1", "block-2", "block-3"],
       "settings": {
         "design_mode": false,
         "enable": false,
         "bg_blur": true,
         "decline_heading": "Come back when you're older",
-        "decline_content": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.<\/p>",
+        "decline_content": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.</p>",
         "return_button": "Oops, I entered incorrectly"
       }
     }
   },
-  "order": [
-    "footer",
-    "mobile-sticky-bar",
-    "age-verifier-popup"
-  ]
+  "order": ["footer", "mobile-sticky-bar", "age-verifier-popup"]
 }

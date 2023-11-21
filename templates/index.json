@@ -1,9 +1,9 @@
 {
   "sections": {
-    "c72959ad-9620-4e94-ae33-1bde908e9701": {
+    "0fc8dd8f-b18b-4cd3-a43e-acaed5aa13a8": {
       "type": "custom-code",
       "settings": {
-        "custom_css": ":root {\n--spacing-sections-desktop: 120px;\n  --spacing-sections-tablet: 60px;\n  --spacing-sections-mobile: 48px;\n}\n.sf-home__collection-list .m-collection-card__link {\n  font-size: 24px;\n  line-height: 1.4;\n  font-weight: 400;\n}\n\n.sf-icon-box--large .m-icon-box__heading {\n  font-weight: 400;\n}\n.sf-icon-box--large .m-icon-box .m-button {\n  margin-top: 16px;\n}\n\n.m-richtext__subtitle,\n.m-lookbook__subheading {\n  font-weight: 500;\n}\n.sf-custom--collection-banner .container-full {\n  padding-left: 0;\n  padding-right: 0;\n}\n.sf-custom--collection-banner .m-image-card--button-fixed .m-button--fixed {\n  border-color: #e2e2e2;\n  padding-bottom: 20px;\n}\n.sf-custom--collection-banner .m-richtext__title {\n  line-height: 1.3;\n}\n\n.m-lookbook__header .m-lookbook__heading {\n  font-size: 29px;\n}\n@media (min-width: 768px) {\n  .sf-custom--collection-banner .m-image-card--button-fixed .m-button--fixed {\n    padding-bottom: 40px;\n    padding-top: 24px;\n  }\n  .sf-icon-box--large .m-icon-box__heading {\n    font-size: 32px;\n  }\n  .sf-icon-box--large .m-icon-box .m-button {\n    margin-top: 24px;\n  }\n}\n@media (min-width: 1024px) {\n  .m-footer--block-newsletter .m-footer--block-title {\n    font-size: 28px;\n    font-weight: 400;\n  }\n  .sf-custom--collection-banner .m-image-card__content {\n    padding-top: 70px;\n  }\n}\n@media (min-width: 1280px) {\n  .m-lookbook__header .m-lookbook__heading {\n    font-size: 42px;\n    line-height: 52px;\n  }\n  .sf-custom--collection-banner .m-richtext__subtitle,\n  .m-lookbook__header .m-lookbook__subheading {\n    font-size: 20px;\n    margin-bottom: 24px;\n  }\n}\n@media (min-width: 1536px) {\n  .sf-home__slideshow .m-slide__title {\n    font-size: 70px;\n    line-height: 80px;\n    margin-bottom: 40px;\n  }\n  .sf-custom--collection-banner .m-image-card__content {\n    padding-top: 110px;\n  }\n}\n\n@media (max-width: 767px) {\n  .sf-custom--collection-banner .m-image-card__content {\n    padding-bottom: 25px;\n    padding-top: 30px;\n  }\n  .sf-custom--collection-banner .m-image-card--button-fixed .m-button--fixed {\n    justify-content: center;\n    gap: 10px;\n    border: 0;\n    padding-bottom: 25px;\n  }\n  .sf-home__slideshow.m-slider--content-stack .m-slide__wrapper {\n    padding-top: 32px;\n  }\n  .sf-home__collection-list.m-collection-list .m-slider-controls,\n  .sf-home__collection-list .m-section__heading {\n    text-align: center;\n  }\n  body .m-lookbook__subheading {\n    margin-bottom: 12px;\n  }\n}"
+        "custom_css": ".m-slider--home .m-slide__subtitle,\n.m-slider--home .m-slide__title {\n  font-weight: 500;\n}\n.m-slider--home .m-slide__subtitle,\nbody .m-richtext__description,\n.m-image-box--home .m-icon-box__heading {\n  font-family: 'M-Body-Font';\n}\nbody .m-section__header {\n  margin-bottom: 30px;\n}\n.m-collection-list--home .m-collection-card__image,\n.m-custom--banner .m-image-card {\n  border-radius: 10px;\n}\n.custom__html-block2 {\n  padding: 70px 80px;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  border-radius: 8px;\n}\n.custom__html-block2 .block__content {\n  text-align: center;\n  display: inline-block;\n}\n.custom__html-block2 .block__content h2 {\n  color: #fff;\n  margin-bottom: 6px;\n  margin-top: 0;\n}\n.custom__html-block2 .block__content p {\n  color: rgba(255, 255, 255, 0.7);\n}\n.custom__html-block2 .block__social {\n  margin-top: 50px;\n  text-align: center;\n}\n.custom__html-block2 .block__social ul {\n  margin: 0 -20px;\n  padding-left: 0;\n}\n.custom__html-block2 .block__social ul li {\n  display: inline-block;\n  padding: 0 20px;\n}\n.custom__html-block2 .block__social ul li a {\n  display: flex;\n  align-items: center;\n  color: #fff;\n}\n.custom__html-block2 .block__social ul li a img {\n  height: 15px;\n  margin-right: 10px;\n  margin-top: 0;\n  margin-bottom: 0;\n}\n.custom__html-block1 {\n  padding: 0 70px;\n  position: relative;\n}\n.custom__html-block1::after {\n  position: absolute;\n  content: \"\";\n  top: 22px;\n  left: 0;\n  width: 100%;\n  height: calc(100% - 56px);\n  border-radius: 8px;\n  background: #e3ebec;\n  z-index: -1;\n}\n.custom__html-block1 img {\n  max-width: 300px;\n  margin-right: 70px;\n}\n.custom__html-block1 .block__content {\n  position: relative;\n  z-index: 1;\n}\n.custom__html-block1 .block__content-text {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 100%;\n}\n.custom__html-block1 .block__content-text .block__heading h3 {\n  font-size: 40px;\n  line-height: 56px;\n  margin-bottom: 4px;\n}\n.custom__html-block1 .block__content-text .block__heading p {\n  color: #696969;\n}\n\n@media (min-width: 768px) {\n  .m-slider--home .m-slide__subtitle {\n    font-size: 24px;\n  }\n}\n@media(max-width: 767px) {\n  .sf-custom--3 .m-section-my {\n    margin-bottom: 40px;\n  }\n  .custom__html-block1 {\n    padding: 0 20px 20px;\n  }\n  .custom__html-block1 .block__content,\n  .custom__html-block1 .block__content-text {\n    flex-direction: column;\n    text-align: center;\n  }\n  .custom__html-block1 img {\n    margin-right: 0;\n  }\n  .custom__html-block1 .block__content-text .block__heading h3 {\n    font-size: 24px;\n    line-height: 30px;\n    margin-top: 20px;\n  }\n  .custom__html-block1 .block__content-text .block__heading p {\n    margin-bottom: 20px;\n  }\n  .custom__html-block1::after {\n    height: 100%;\n  }\n  .custom__html-block2 {\n    padding: 50px 20px;\n    background-position: left;\n  }\n  .custom__html-block2 .block__content h3 {\n    font-size: 24px;\n    line-height: 30px;\n  }\n  .custom__html-block2 .block__social ul li {\n    margin-bottom: 15px;\n  }\n}\n\n\n\n@media only screen and (min-width: 768px) {\n.m-slider--home .m-dot {\ncolor: white;\n}\n}"
       }
     },
     "1621243260e1af0c20": {
@@ -12,24 +12,23 @@
         "1621243260e1af0c20-0": {
           "type": "slider_item",
           "settings": {
-            "background": "",
-            "mb_background": "",
-            "content_in_container": false,
+            "background": "shopify://shop_images/hero-banner.webp",
+            "content_in_container": true,
             "content_position": "left middle",
             "text_alignment": "left",
             "text_size": "large",
-            "text_color": "black",
-            "subheading": "New Arrivals",
-            "title": "Venice Haute <br>\nCouture",
+            "text_color": "white",
+            "subheading": "<span class=\"font__weight-medium\">Mère, Femme et Fille</span>",
+            "title": "<span class=\"font__weight-medium f-bold\">L'Islam et La Femme</span>\n<p class=\"tf-small\" style=\"font-weight:400;\">Découvrez ceux que l'Islam a réservé pour Vous</p>",
             "description": "",
             "image_link": "",
-            "button_text": "Shop Now",
-            "button_link": "",
-            "button_style": "sf__btn-secondary",
+            "button_text": "En savoir plus",
+            "button_link": "shopify://collections/default-category-librairie-musulmane-la-femme-en-islam",
+            "button_style": "m-button--primary",
             "button_size": "",
-            "show_footer": true,
+            "show_footer": false,
             "footer_alignment": "end",
-            "footer_text": "The ReCotton Tee",
+            "footer_text": "New Collection",
             "footer_button": "Shop Now",
             "footer_link": ""
           }
@@ -37,24 +36,23 @@
         "1621243260e1af0c20-1": {
           "type": "slider_item",
           "settings": {
-            "background": "",
-            "mb_background": "",
-            "content_in_container": false,
+            "background": "shopify://shop_images/hero-banner-2.webp",
+            "content_in_container": true,
             "content_position": "left middle",
             "text_alignment": "left",
             "text_size": "large",
-            "text_color": "black",
-            "subheading": "New Arrivals",
-            "title": "Responsible<br>\nDenim Lab",
+            "text_color": "white",
+            "subheading": "<span class=\"font__weight-medium\">La base de l'Islam</span>",
+            "title": "<span class=\"font__weight-medium f-bold\">Nos Coran</span>\n<p class=\"tf-small\" style=\"font-weight:100;\">Débutez votre apprentissage par Le Livre !</p>",
             "description": "",
             "image_link": "",
-            "button_text": "Shop Now",
-            "button_link": "",
-            "button_style": "sf__btn-secondary",
-            "button_size": "",
-            "show_footer": true,
+            "button_text": "En savoir plus",
+            "button_link": "shopify://collections/default-category-librairie-musulmane-coran",
+            "button_style": "m-button--primary",
+            "button_size": "m-button--small",
+            "show_footer": false,
             "footer_alignment": "end",
-            "footer_text": "The ReCotton Tee",
+            "footer_text": "New Collection",
             "footer_button": "Shop Now",
             "footer_link": ""
           }
@@ -62,24 +60,23 @@
         "1621243260e1af0c20-2": {
           "type": "slider_item",
           "settings": {
-            "background": "",
-            "mb_background": "",
-            "content_in_container": false,
+            "background": "shopify://shop_images/hero-banner-3.webp",
+            "content_in_container": true,
             "content_position": "left middle",
             "text_alignment": "left",
             "text_size": "large",
             "text_color": "black",
-            "subheading": "New Arrivals",
-            "title": "Ultimate Winter<br>\nWarmer",
+            "subheading": "<span class=\"font__weight-medium\">Nos Livres Islamiques</span>",
+            "title": "<span class=\"font__weight-medium f-bold\">La Science<br> Avant La Parole et l'Acte</span>\n<p class=\"tf-small\" style=\"font-weight:100;\">Tout le savoir dont vous avez besoin !</p>",
             "description": "",
             "image_link": "",
-            "button_text": "Shop Now",
-            "button_link": "",
-            "button_style": "sf__btn-secondary",
-            "button_size": "",
-            "show_footer": true,
+            "button_text": "En savoir plus",
+            "button_link": "shopify://collections/default-category-librairie-musulmane-les-sciences-islamiques",
+            "button_style": "m-button--primary",
+            "button_size": "m-button--small",
+            "show_footer": false,
             "footer_alignment": "end",
-            "footer_text": "The ReCotton Tee",
+            "footer_text": "New Collection",
             "footer_button": "Shop Now",
             "footer_link": ""
           }
@@ -90,217 +87,324 @@
         "1621243260e1af0c20-1",
         "1621243260e1af0c20-2"
       ],
+      "custom_css": [
+        "@media only screen and (min-width: 768px) {.swiper-wrapper {height: 84vh; } h1, h2 {font-size: 48px; }}",
+        "h1,h2 {font-weight: 900; letter-spacing: 1px; /* text-transform: capitalize; */}",
+        ".m-richtext__subtitle {font-weight: 500;}",
+        ".m-button {color: #14332b;}",
+        ".m-button:hover {color: white;}",
+        ".tf-small {font-size: 18px;}",
+        "@media only screen and (max-width: 768px) {.tf-small {font-size: 17px; }}"
+      ],
       "settings": {
         "container": "w-full",
-        "slideshow_height": "adapt",
+        "slideshow_height": "fullscreen",
         "show_overlay": false,
-        "dots_position": "right",
+        "dots_position": "bottom",
         "dots_color": "dark",
         "show_dots": true,
         "show_arrows": false,
         "autorotate": true,
-        "autorotate_speed": 4,
+        "autorotate_speed": 5,
         "use_content_above": false,
-        "custom_class": "sf-home__slideshow",
+        "custom_class": "m-slider--home",
         "animations": "inherit"
       }
     },
-    "16225316461d1cff80": {
-      "type": "collection-list",
+    "162209953296371dbc": {
+      "type": "icon-box",
       "blocks": {
-        "65e38235-f03b-43c9-8590-38c9c656e51c": {
-          "type": "collection_block",
+        "162209953296371dbc-2": {
+          "type": "iconbox",
           "settings": {
-            "collection": "sandals",
-            "title": "Sandals",
-            "item_image": ""
+            "image": "shopify://shop_images/premium_photo-1676929222620-a74baf4c8955.jpg",
+            "image_by_url": "",
+            "title": "<span class=\"font-body capitalize\">La médecine Islamique</span>",
+            "description": "<p>Lorem Ipsum est tout simplement un faux texte de l’industrie de l’imprimerie et de la composition.</p>",
+            "link": "shopify://collections/default-category-librairie-musulmane-la-medecine-islamique",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
           }
         },
-        "694c01c9-a95f-4c09-9cf0-ec75f0131e98": {
-          "type": "collection_block",
+        "162209953296371dbc-1": {
+          "type": "iconbox",
           "settings": {
-            "collection": "glasses",
-            "title": "Sunglasses",
-            "item_image": ""
+            "image": "shopify://shop_images/hero-banner-2.webp",
+            "image_by_url": "",
+            "title": "<span class=\"font-body capitalize\">Coran</span>",
+            "description": "<p>Lorem Ipsum est tout simplement un faux texte de l’industrie de l’imprimerie et de la composition.</p>",
+            "link": "shopify://collections/default-category-librairie-musulmane-coran",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
           }
         },
-        "16225316461d1cff80-1": {
-          "type": "collection_block",
+        "162209953296371dbc-0": {
+          "type": "iconbox",
           "settings": {
-            "collection": "bags",
-            "title": "Summer Bags",
-            "item_image": ""
+            "image": "shopify://shop_images/s-accrocher-a-la-voie-des-pieux-predecesseurs_1.jpg",
+            "image_by_url": "",
+            "title": "<span class=\"font-body capitalize\">En vedette</span>",
+            "description": "<p>Lorem Ipsum est tout simplement un faux texte de l’industrie de l’imprimerie et de la composition.</p>",
+            "link": "shopify://collections/default-category-librairie-musulmane-coran-autour-du-coran",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--secondary",
+            "button_size": ""
           }
         },
-        "6d4abb37-5aa2-4499-a2b0-5d85f0d36eec": {
-          "type": "collection_block",
+        "db3f5b9d-6b1b-4bff-bfa2-2b7154807b5c": {
+          "type": "iconbox",
           "settings": {
-            "collection": "sneakers",
-            "title": "Sneakers",
-            "item_image": ""
-          }
-        },
-        "12985deb-0775-45ce-80f6-6be7f3150a91": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "accessories",
-            "title": "Accessories",
-            "item_image": ""
-          }
-        },
-        "16225316461d1cff80-2": {
-          "type": "collection_block",
-          "disabled": true,
-          "settings": {
-            "collection": "shoes",
-            "title": "Shoes",
-            "item_image": ""
-          }
-        },
-        "07ebf095-1da2-4546-87f3-97e73a789e8d": {
-          "type": "collection_block",
-          "disabled": true,
-          "settings": {
-            "collection": "basic",
-            "title": "Basic"
-          }
-        },
-        "7a571158-7686-4e66-a693-4716fc905604": {
-          "type": "collection_block",
-          "disabled": true,
-          "settings": {
-            "collection": "tops",
-            "title": "Tops"
+            "image": "shopify://shop_images/hero-banner-3.webp",
+            "image_by_url": "",
+            "title": "La femme en Islam",
+            "description": "<p>Lorem Ipsum est tout simplement un faux texte de l’industrie de l’imprimerie et de la composition.</p>",
+            "link": "shopify://collections/default-category-librairie-musulmane-la-femme-en-islam",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
           }
         }
       },
       "block_order": [
-        "65e38235-f03b-43c9-8590-38c9c656e51c",
-        "694c01c9-a95f-4c09-9cf0-ec75f0131e98",
-        "16225316461d1cff80-1",
-        "6d4abb37-5aa2-4499-a2b0-5d85f0d36eec",
-        "12985deb-0775-45ce-80f6-6be7f3150a91",
-        "16225316461d1cff80-2",
-        "07ebf095-1da2-4546-87f3-97e73a789e8d",
-        "7a571158-7686-4e66-a693-4716fc905604"
+        "162209953296371dbc-2",
+        "162209953296371dbc-1",
+        "162209953296371dbc-0",
+        "db3f5b9d-6b1b-4bff-bfa2-2b7154807b5c"
+      ],
+      "custom_css": [
+        ".m-image {height: 450px;}",
+        "h2 {font-weight: 700; letter-spacing: 1px; text-transform: capitalize;}",
+        "h3 {font-weight: 500;}",
+        "@media only screen and (min-width: 768px) {h2 {font-size: 32px; } h3 {font-size: 24px; }}"
       ],
       "settings": {
-        "heading": "Shop by Categories",
-        "heading_size": "h3",
+        "heading": "Favoris Des Membres",
+        "heading_size": "h2",
         "subheading": "",
         "description": "",
         "header_alignment": "left",
         "container": "container-fluid",
-        "background_color": "",
-        "layout": "grid",
-        "expanded": true,
-        "card_style": "inside",
-        "text_alignment": "left",
-        "hover_effect": "scaling-up",
-        "show_product_count": true,
-        "count_inline_title": true,
-        "image_rounded": false,
-        "items_per_row": 3,
-        "item_gap": 40,
+        "background_color": "rgba(0,0,0,0)",
+        "item_per_row": 3,
+        "item_gap": 30,
+        "item_gap_mobile": 10,
+        "card_style": "vertical",
+        "image_max_width": "",
+        "content_alignment": "start",
+        "hover_effect": "none",
         "enable_slider": true,
         "show_pagination": true,
-        "show_navigation": true,
-        "autorotate": false,
-        "autorotate_speed": 4,
-        "mobile_disable_slider": false,
+        "show_navigation": false,
         "use_scroll_mobile": true,
-        "mobile_gap": 16,
-        "hidden_slide_control_mobile": false,
+        "use_grid_column_mb": false,
         "padding_top": 0,
         "padding_bottom": 0,
-        "custom_class": "sf-home__collection-list",
+        "custom_class": "m-image-box--home",
         "animations": "inherit"
       }
     },
-    "162251092958fcda7c": {
-      "type": "product-tabs",
+    "1622195298f9850c12": {
+      "type": "custom-content",
       "blocks": {
-        "162251092958fcda7c-0": {
-          "type": "tab",
+        "2896ff1d-b246-4d01-bde5-d993aa527afb": {
+          "type": "html",
           "settings": {
-            "title": "best sellers",
-            "collection": "fashion-2023"
-          }
-        },
-        "162251092958fcda7c-1": {
-          "type": "tab",
-          "settings": {
-            "title": "new arrivals",
-            "collection": "fashion-2023-new-arrivals"
+            "code": "<div class=\"custom__html-block1\">\n  <div class=\"block__content flex items-center\">\n    <img data-src=\"https://cdn.shopify.com/s/files/1/0833/5569/7429/files/12.webp?v=1699353504\" loading=\"lazy\" width=\"300\" height=\"100\" class=\"lazyload\">\n    <div class=\"block__content-text\">\n      <div class=\"block__heading\">\n        <h3>\n          Découvrez votre boutique<br>\n          musulmane Al Niya\n        </h3>\n        <p>Les plus gros livres de la saison !</p>\n      </div>\n      <div class=\"block__action\">\n        <a href=\"/collections/all\" class=\"m-button m-button--tertiary\" style=\"background-color: #8c4512; color: white; border: 0\">Boutique</a>\n      </div>\n    </div>\n  </div>\n</div>",
+            "width": "100%",
+            "block_custom_class": "",
+            "animations": "inherit"
           }
         }
       },
-      "block_order": [
-        "162251092958fcda7c-0",
-        "162251092958fcda7c-1"
+      "block_order": ["2896ff1d-b246-4d01-bde5-d993aa527afb"],
+      "custom_css": [
+        ".custom__html-block1:after {background-color: #f5a3614a;}",
+        "h3 {font-weight: 500; letter-spacing: 1px;}"
       ],
       "settings": {
-        "heading": "You are in",
+        "heading": "",
         "heading_size": "h3",
         "subheading": "",
         "description": "",
         "header_alignment": "center",
         "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "m-custom--html"
+      }
+    },
+    "1622102101fd8de171": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h3 {font-size: 16px;}",
+        ".m-price__regular span {font-size: 20px;}",
+        ".m-image {height: 350px;}",
+        "h2 {font-weight: 700; letter-spacing: 1px; text-transform: capitalize;}",
+        "@media only screen and (min-width: 768px) {h2 {font-size: 32px; } .m-image {height: 450px; }}"
+      ],
+      "settings": {
+        "heading": "Nos Meilleures Ventes",
+        "heading_size": "h2",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "left",
+        "container": "container-fluid",
         "background_color": "rgba(0,0,0,0)",
-        "tab_header": "select",
-        "limit": 10,
-        "show_button": true,
-        "button_type": "link",
-        "button_label": "Shop All Products",
-        "button_style": "m-button--secondary",
-        "button_size": "",
+        "collection": "default-category-librairie-musulmane-lapprentissage-de-lislam-apprendre-les-bases-de-lislam",
+        "enable_flashsale": false,
+        "show_countdown": true,
+        "product_to_show": 8,
+        "items_per_row": 4,
+        "item_gap": 30,
         "pcard_layout": "",
         "pcard_image_ratio": "",
         "show_vendor": false,
-        "items_per_row": 5,
-        "item_gap": 30,
+        "hide_title": false,
         "enable_slider": false,
-        "show_navigation": false,
         "show_pagination": false,
+        "show_navigation": false,
+        "button_type": "link",
+        "button_text": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "infinite_load": false,
+        "max_page_load": 3,
         "mobile_disable_slider": false,
         "use_scroll_mobile": true,
-        "item_gap_mobile": 16,
+        "item_gap_mobile": 10,
         "padding_top": 0,
         "padding_bottom": 0,
-        "custom_class": "sf-home__product-tab",
+        "custom_class": "m--featured-collection--home",
         "animations": "inherit"
       }
     },
-    "7ea56e8d-5794-4708-8812-8ee9604a3a21": {
+    "1622189076591a7637": {
+      "type": "image-with-text",
+      "custom_css": [
+        "h3 {/* font-size: 32px; */ font-weight: 700; text-transform: capitalize;}"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "container": "container-fluid",
+        "background_color": "rgba(0,0,0,0)",
+        "item_gap": 100,
+        "item_gap_mobile": 30,
+        "image": "shopify://shop_images/l-usure-riba-ses-formes-ses-dangers-dine-al-haqq_1.jpg",
+        "link": "",
+        "layout": "left",
+        "image_column_size": "6",
+        "hover_effect": false,
+        "title": "Inspiration pour<br>\nChaque âge.",
+        "sub_title": "",
+        "text": "<p>81 % des étudiants qui utilisaient traditionnellement des livres reliés pour mener leurs recherches utilisent désormais des appareils numériques.</p>",
+        "text_size": "medium",
+        "content_alignment": "left",
+        "button_label": "Achetez maintenant",
+        "button_link": "shopify://collections/default-category-librairie-musulmane-les-sciences-islamiques-dogme-islamique",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "m-iwt--home",
+        "animations": "inherit"
+      }
+    },
+    "16221893455845f8d5": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h3 {font-size: 16px;}",
+        ".m-price__regular span {font-size: 20px;}",
+        "h2 {font-weight: 700; letter-spacing: 1px; text-transform: capitalize;}",
+        "@media only screen and (min-width: 768px) {h2 {font-size: 32px; }}"
+      ],
+      "settings": {
+        "heading": "Fraichement publié",
+        "heading_size": "h2",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "left",
+        "container": "container-fluid",
+        "background_color": "rgba(0,0,0,0)",
+        "collection": "default-category-librairie-musulmane-lapprentissage-de-lislam-apprendre-le-saint-coran",
+        "enable_flashsale": false,
+        "show_countdown": false,
+        "product_to_show": 4,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "hide_title": false,
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "button_type": "link",
+        "button_text": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "infinite_load": false,
+        "max_page_load": 3,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 10,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "m--featured-collection--home",
+        "animations": "inherit"
+      }
+    },
+    "1622189507ee6bfe14": {
       "type": "custom-content",
       "blocks": {
-        "template--15977492021425__7ea56e8d-5794-4708-8812-8ee9604a3a21-1678440566c64de1a8-1": {
-          "type": "image",
-          "settings": {
-            "image": "",
-            "link": "",
-            "width": "50%",
-            "alignment": "center",
-            "block_custom_class": "",
-            "animations": "zoom-fade"
-          }
-        },
-        "5c5877d5-05b2-4a50-81e3-78c3f6d0d833": {
+        "33849c4b-a883-440c-befb-40afc37629fe": {
           "type": "image_card",
           "settings": {
             "width": "50%",
-            "content_position": "top_center",
-            "content_alignment": "center",
-            "text_size": "medium",
+            "content_position": "center_left",
+            "content_alignment": "left",
+            "text_size": "small",
             "text_color": "black",
-            "image": "",
-            "link": "shopify:\/\/collections\/all",
-            "title": "The ReLeather Beige<br> Tennis Shoe",
-            "subtitle": "New collection",
-            "button_label": "Shop New Collection",
-            "button_style": "m-button--primary",
-            "button_size": "m-button--large",
-            "button_fixed": true,
+            "image": "shopify://shop_images/customImage1_f4fd37f7-0317-49e7-beb0-7ddfc417aa6a.jpg",
+            "link": "shopify://collections/default-category-librairie-musulmane-lapprentissage-de-lislam-apprendre-le-saint-coran",
+            "title": "Carnet de fond<br> du mois",
+            "subtitle": "",
+            "button_label": "Achetez maintenant",
+            "button_style": "m-button--link",
+            "button_size": "m-button--small",
+            "button_fixed": false,
+            "use_content_above": true,
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "2a990eee-7285-4608-88ca-63bc3948ce0a": {
+          "type": "image_card",
+          "settings": {
+            "width": "50%",
+            "content_position": "center_left",
+            "content_alignment": "left",
+            "text_size": "small",
+            "text_color": "black",
+            "image": "shopify://shop_images/customImage2_24eaa1a4-6b52-44bd-997f-dda128ad3f37.jpg",
+            "link": "shopify://collections/default-category-librairie-musulmane-les-sciences-islamiques-dogme-islamique",
+            "title": "Viande, votre prochain<br> livre préféré",
+            "subtitle": "",
+            "button_label": "Achetez maintenant",
+            "button_style": "m-button--link",
+            "button_size": "m-button--small",
+            "button_fixed": false,
             "use_content_above": true,
             "block_custom_class": "",
             "animations": "inherit"
@@ -308,244 +412,13 @@
         }
       },
       "block_order": [
-        "template--15977492021425__7ea56e8d-5794-4708-8812-8ee9604a3a21-1678440566c64de1a8-1",
-        "5c5877d5-05b2-4a50-81e3-78c3f6d0d833"
+        "33849c4b-a883-440c-befb-40afc37629fe",
+        "2a990eee-7285-4608-88ca-63bc3948ce0a"
       ],
       "custom_css": [
-
+        "@media only screen and (min-width: 768px) {h3 {font-size: 32px; }}",
+        "h3 {font-weight: 700;}"
       ],
-      "settings": {
-        "heading": "",
-        "heading_size": "h3",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "center",
-        "container": "w-full",
-        "background_color": "",
-        "gap": 0,
-        "use_scroll_mobile": false,
-        "gap_mobile": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "custom_class": "sf-custom--collection-banner"
-      }
-    },
-    "7731d6df-9d53-4c34-9efb-98fac2fa365d": {
-      "type": "icon-box",
-      "blocks": {
-        "template--15977492021425__7731d6df-9d53-4c34-9efb-98fac2fa365d-16769649642102c2d8-1": {
-          "type": "iconbox",
-          "settings": {
-            "image": "",
-            "image_by_url": "",
-            "title": "The Cashmere Cardigan",
-            "description": "<p>Add a free personalized note during checkout.<\/p>",
-            "link": "",
-            "button_label": "Shop Cardigans",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_style": "m-button--secondary",
-            "button_size": ""
-          }
-        },
-        "template--15977492021425__7731d6df-9d53-4c34-9efb-98fac2fa365d-16769649642102c2d8-0": {
-          "type": "iconbox",
-          "settings": {
-            "image": "",
-            "image_by_url": "",
-            "title": "The Italian Chelsea Boot",
-            "description": "<p>Brittany Bathgate shows how less is more.<\/p>",
-            "link": "",
-            "button_label": "Shop bags",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_style": "m-button--secondary",
-            "button_size": ""
-          }
-        },
-        "template--15977492021425__7731d6df-9d53-4c34-9efb-98fac2fa365d-16769649642102c2d8-2": {
-          "type": "iconbox",
-          "settings": {
-            "image": "",
-            "image_by_url": "",
-            "title": "Transit Fanny Pack",
-            "description": "<p>Brittany Bathgate shows how less is more.<\/p>",
-            "link": "",
-            "button_label": "Shop Shirts",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_style": "m-button--secondary",
-            "button_size": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15977492021425__7731d6df-9d53-4c34-9efb-98fac2fa365d-16769649642102c2d8-1",
-        "template--15977492021425__7731d6df-9d53-4c34-9efb-98fac2fa365d-16769649642102c2d8-0",
-        "template--15977492021425__7731d6df-9d53-4c34-9efb-98fac2fa365d-16769649642102c2d8-2"
-      ],
-      "custom_css": [
-        ".sf__btn {margin-top: 24px; padding-left: 25px; padding-right: 25px; border-color: #dadada;}"
-      ],
-      "settings": {
-        "heading": "Season Collection",
-        "heading_size": "h3",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "center",
-        "container": "container-fluid",
-        "background_color": "rgba(0,0,0,0)",
-        "item_per_row": 3,
-        "item_gap": 30,
-        "item_gap_mobile": 16,
-        "card_style": "vertical",
-        "image_max_width": "100%",
-        "content_alignment": "start",
-        "hover_effect": "scaling-up",
-        "enable_slider": false,
-        "show_pagination": false,
-        "show_navigation": false,
-        "use_scroll_mobile": true,
-        "use_grid_column_mb": false,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "custom_class": "sf-icon-box--large",
-        "animations": "inherit"
-      }
-    },
-    "721388d4-7859-4958-b320-c705800d31d9": {
-      "type": "lookbook",
-      "blocks": {
-        "65a3de0e-b3e4-4c97-b3e5-2f2f03d92449": {
-          "type": "lookbook-slider",
-          "settings": {
-            "sub_title": "Favorite products",
-            "title": "Shop this look",
-            "text": "",
-            "content_alignment": "center",
-            "text_color": "black",
-            "background_color": "",
-            "image": "",
-            "button_style": "dark",
-            "top_1": 32,
-            "left_1": 44,
-            "product_1": "seamless-crop-top",
-            "top_2": 45,
-            "left_2": 50,
-            "product_2": "seamless-cycling-shorts",
-            "top_3": 87,
-            "left_3": 45,
-            "product_3": "contrast-trainers-with-mesh-detail",
-            "top_4": 0,
-            "left_4": 0,
-            "product_4": "",
-            "top_5": 20,
-            "left_5": 0,
-            "product_5": "",
-            "product_per_view": "2",
-            "show_pagination": true,
-            "show_navigation": true,
-            "pcard_layout": "",
-            "pcard_image_ratio": "",
-            "show_vendor": false,
-            "hide_title": false
-          }
-        }
-      },
-      "block_order": [
-        "65a3de0e-b3e4-4c97-b3e5-2f2f03d92449"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_size": "h3",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "center",
-        "container": "container-fluid",
-        "background_color": "rgba(0,0,0,0)",
-        "image_aspect_ratio": "3\/4",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "custom_class": "",
-        "animations": "inherit"
-      }
-    },
-    "de0a17f2-43a3-4a11-a2b7-f2092303f3a7": {
-      "type": "custom-content",
-      "blocks": {
-        "9ef56b70-2b08-4f55-b9ef-5a1539ae0225": {
-          "type": "handpicked_products",
-          "settings": {
-            "width": "50%",
-            "alignment": "center",
-            "subtitle": "Favorite products",
-            "title": "Shop this look",
-            "text": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-primary",
-            "button_size": "",
-            "text_size": "medium",
-            "content_alignment": "center",
-            "product_list": [
-              "seamless-crop-top",
-              "seamless-cycling-shorts",
-              "cateye-sunglasses"
-            ],
-            "product_to_show": 6,
-            "items_per_row": 2,
-            "item_gap": 30,
-            "pcard_layout": "",
-            "pcard_image_ratio": "",
-            "show_vendor": false,
-            "hide_title": false,
-            "enable_slider": true,
-            "show_pagination": true,
-            "show_navigation": true,
-            "use_scroll_mobile": true,
-            "item_gap_mobile": 16,
-            "block_custom_class": "",
-            "animations": "inherit"
-          }
-        },
-        "9a3e8bcd-5794-42eb-8e4e-2a5865b48e29": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "video_type": "shopify",
-            "shopify_video": "",
-            "video_link": "",
-            "ratio": "4:3",
-            "video_title": "",
-            "text_size": "medium",
-            "text_color": "white",
-            "play_style": "solid",
-            "play_size": "medium",
-            "autoplay": true,
-            "loop": true,
-            "muted": true,
-            "show_controls": false,
-            "width": "50%",
-            "alignment": "start",
-            "block_custom_class": "sf-video--custom-content",
-            "animations": "inherit"
-          }
-        },
-        "193adc84-8ce7-4336-b4c7-7142a2c81b10": {
-          "type": "image",
-          "settings": {
-            "image": "",
-            "link": "",
-            "width": "50%",
-            "alignment": "center",
-            "block_custom_class": "",
-            "animations": "inherit"
-          }
-        }
-      },
-      "block_order": [
-        "9ef56b70-2b08-4f55-b9ef-5a1539ae0225",
-        "9a3e8bcd-5794-42eb-8e4e-2a5865b48e29",
-        "193adc84-8ce7-4336-b4c7-7142a2c81b10"
-      ],
-      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h3",
@@ -554,101 +427,120 @@
         "header_alignment": "center",
         "container": "container-fluid",
         "background_color": "",
-        "gap": 0,
+        "gap": 30,
         "use_scroll_mobile": false,
         "gap_mobile": 16,
         "padding_top": 0,
         "padding_bottom": 0,
-        "custom_class": "m-custom-content--favorite-products"
+        "custom_class": "m-custom--banner"
       }
     },
-    "11cfb44f-b725-4daf-8ee7-4bbf2c63914d": {
-      "type": "instagram",
-      "settings": {
-        "heading": "Follow us Instagram",
-        "heading_size": "h3",
-        "subheading": "",
-        "description": "Tag <span class=\"text-black\">@minimog<\/span> in your Instagram photos for a chance to be featured here.<br>\nFind more inspiration on <a href=\"#\">our Instagram.<\/a>",
-        "header_alignment": "center",
-        "container": "container-fluid",
-        "background_color": "rgba(0,0,0,0)",
-        "layout": "grid",
-        "images_count": 5,
-        "grid_columns": 5,
-        "gap": 30,
-        "mobile_gap": 10,
-        "profile": "https:\/\/www.instagram.com\/minimog.trendy\/",
-        "button_label": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "custom_class": ""
-      }
-    },
-    "16225125199f82d8fe": {
-      "type": "icon-box",
+    "16221897825fc7d563": {
+      "type": "collection-list",
       "blocks": {
-        "16225125199f82d8fe-0": {
-          "type": "iconbox",
+        "16221897825fc7d563-0": {
+          "type": "collection_block",
           "settings": {
-            "image": "",
-            "image_by_url": "",
-            "title": "Free Shipping",
-            "description": "<p>Free Shipping for orders over £130<\/p>",
-            "link": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-link",
-            "button_size": ""
+            "collection": "default-category-librairie-musulmane-coran",
+            "title": "Coran",
+            "item_image": "shopify://shop_images/les-merites-du-coran-mohammad-ibn-abd-al-wahhab-ibn-badis.jpg"
           }
         },
-        "16225125199f82d8fe-1": {
-          "type": "iconbox",
+        "16221897825fc7d563-1": {
+          "type": "collection_block",
           "settings": {
-            "image": "",
-            "image_by_url": "",
-            "title": "Money Guarantee",
-            "description": "<p>Within 30 days for an exchange.<\/p>",
-            "link": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-link",
-            "button_size": ""
+            "collection": "default-category-librairie-musulmane-exhortation-et-meditation",
+            "title": "Exhortation et Méditation",
+            "item_image": "shopify://shop_images/le-livre-du-repentir_5fad466f-8bea-42b2-9ca4-545342014bac.jpg"
           }
         },
-        "16225125199f82d8fe-2": {
-          "type": "iconbox",
+        "16221897825fc7d563-2": {
+          "type": "collection_block",
           "settings": {
-            "image": "",
-            "image_by_url": "",
-            "title": "Online Support",
-            "description": "<p>24 hours a day, 7 days a week<\/p>",
-            "link": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-link",
-            "button_size": ""
+            "collection": "default-category-librairie-musulmane-groupe-et-secte",
+            "title": "Groupe et Secte",
+            "item_image": "shopify://shop_images/les-causes-de-la-faiblesse-des-musulmans-face-a-leurs-ennemis_8ff95349-2b89-4590-90b7-38d6571725f7.jpg"
           }
         },
-        "71deafbb-3baf-443a-a087-3f7b8af7b9fa": {
-          "type": "iconbox",
+        "9212999b-c293-42d0-99b8-4f2a076e87ad": {
+          "type": "collection_block",
           "settings": {
-            "image": "",
-            "image_by_url": "",
-            "title": "Flexible Payment",
-            "description": "<p>Pay with Multiple Credit Cards<\/p>",
-            "link": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-link",
-            "button_size": ""
+            "collection": "default-category-librairie-musulmane-la-femme-en-islam",
+            "title": "La Femme en Islam",
+            "item_image": "shopify://shop_images/le-voile-de-la-femme-musulmane-cheikh-al-islam-ibn-taymiyya_0cb0f934-fb4a-43ef-975a-e6412be69f74.jpg"
+          }
+        },
+        "df6b1871-a6c9-4f6b-8ff7-b114cf85311f": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "default-category-librairie-musulmane-la-medecine-islamique",
+            "title": "La Médecine Islamique",
+            "item_image": "shopify://shop_images/l_authentique-de-la-m_decine-proph_tique-_-ibn-el-qayyim_2298c2f8-5151-4653-9227-840297c84525.jpg"
           }
         }
       },
       "block_order": [
-        "16225125199f82d8fe-0",
-        "16225125199f82d8fe-1",
-        "16225125199f82d8fe-2",
-        "71deafbb-3baf-443a-a087-3f7b8af7b9fa"
+        "16221897825fc7d563-0",
+        "16221897825fc7d563-1",
+        "16221897825fc7d563-2",
+        "9212999b-c293-42d0-99b8-4f2a076e87ad",
+        "df6b1871-a6c9-4f6b-8ff7-b114cf85311f"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 700; letter-spacing: 1px; text-transform: capitalize; margin-bottom: 2rem;}",
+        "@media only screen and (min-width: 768px) {h2 {font-size: 32px; }}"
+      ],
+      "settings": {
+        "heading": "Acheter par catégories",
+        "heading_size": "h2",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "left",
+        "container": "container-fluid",
+        "background_color": "",
+        "layout": "grid",
+        "expanded": true,
+        "card_style": "standard",
+        "text_alignment": "center",
+        "hover_effect": "scaling-down",
+        "show_product_count": false,
+        "count_inline_title": true,
+        "image_rounded": true,
+        "items_per_row": 5,
+        "item_gap": 0,
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "mobile_gap": 10,
+        "hidden_slide_control_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "m-collection-list--home",
+        "animations": "inherit"
+      }
+    },
+    "1622194006727ec921": {
+      "type": "custom-content",
+      "blocks": {
+        "2574140b-157e-4d1e-998f-f40bb18fdb07": {
+          "type": "html",
+          "settings": {
+            "code": "<div class=\"custom__html-block2 lazyload\" data-bg=\"https://cdn.shopify.com/s/files/1/0833/5569/7429/files/bg-removebg.webp?v=1699353105\">\n  <div class=\"block__content rte\">\n    <h2>Rejoignez la communauté</h2>\n    <p>\n      81% des étudiants qui utilisaient traditionnellement des livres reliés<br>pour\n      mener leurs recherches utilisent désormais des appareils numériques.\n    </p>\n    <div class=\"block__social\">\n      <ul>\n        <li>\n          <a href=\"https://www.facebook.com/al.niiya\" target=\"_blank\"><img class=\"lazyload\" width=\"8\" height=\"15\" loading=\"lazy\" data-src=\"https://cdn.shopify.com/s/files/1/0561/2742/2636/files/fb.png?v=1622194623\" src=\"https://cdn.shopify.com/s/files/1/0561/2742/2636/files/fb.png?v=1622194623\">137k Followers</a>\n        </li>\n        <li>\n          <a href=\"https://www.instagram.com/al.niiya/\" target=\"_blank\"><img class=\"lazyload\" width=\"15\" height=\"15\" loading=\"lazy\" data-src=\"https://cdn.shopify.com/s/files/1/0561/2742/2636/files/ins.png?v=1622194623\" src=\"https://cdn.shopify.com/s/files/1/0561/2742/2636/files/ins.png?v=1622194623\">21k Followers</a>\n        </li>\n        <li>\n          <a href=\"https://twitter.com/al_niiya\" target=\"_blank\"><img class=\"lazyload\" width=\"18\" height=\"15\" loading=\"lazy\" data-src=\"https://cdn.shopify.com/s/files/1/0561/2742/2636/files/twt.png?v=1622194623\" src=\"https://cdn.shopify.com/s/files/1/0561/2742/2636/files/twt.png?v=1622194623\">21k Followers</a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</div>",
+            "width": "100%",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": ["2574140b-157e-4d1e-998f-f40bb18fdb07"],
+      "custom_css": [
+        "#m-custom__block--2574140b-157e-4d1e-998f-f40bb18fdb07 .m-custom-content__block-inner {border-radius: 15px; background-color: #14332b;}",
+        "a {color: #f5a361;}",
+        "h2 {font-weight: 700; letter-spacing: 1px; text-transform: capitalize;}"
       ],
       "settings": {
         "heading": "",
@@ -657,36 +549,26 @@
         "description": "",
         "header_alignment": "center",
         "container": "container-fluid",
-        "background_color": "#ffffff",
-        "item_per_row": 4,
-        "item_gap": 30,
-        "item_gap_mobile": 10,
-        "card_style": "horizontal",
-        "image_max_width": "60px",
-        "content_alignment": "start",
-        "hover_effect": "none",
-        "enable_slider": false,
-        "show_pagination": true,
-        "show_navigation": true,
+        "background_color": "",
+        "gap": 30,
         "use_scroll_mobile": false,
-        "use_grid_column_mb": false,
-        "padding_top": 46,
-        "padding_bottom": 46,
-        "custom_class": "m-icon-box--small",
-        "animations": "inherit"
+        "gap_mobile": 16,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "section__flush-bottom sf-custom--3"
       }
     }
   },
   "order": [
-    "c72959ad-9620-4e94-ae33-1bde908e9701",
+    "0fc8dd8f-b18b-4cd3-a43e-acaed5aa13a8",
     "1621243260e1af0c20",
-    "16225316461d1cff80",
-    "162251092958fcda7c",
-    "7ea56e8d-5794-4708-8812-8ee9604a3a21",
-    "7731d6df-9d53-4c34-9efb-98fac2fa365d",
-    "721388d4-7859-4958-b320-c705800d31d9",
-    "de0a17f2-43a3-4a11-a2b7-f2092303f3a7",
-    "11cfb44f-b725-4daf-8ee7-4bbf2c63914d",
-    "16225125199f82d8fe"
+    "162209953296371dbc",
+    "1622195298f9850c12",
+    "1622102101fd8de171",
+    "1622189076591a7637",
+    "16221893455845f8d5",
+    "1622189507ee6bfe14",
+    "16221897825fc7d563",
+    "1622194006727ec921"
   ]
 }

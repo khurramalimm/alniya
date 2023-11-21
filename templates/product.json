@@ -1,47 +1,117 @@
 {
   "sections": {
     "breadcrumb": {
-      "type": "breadcrumb"
+      "type": "breadcrumb",
+      "settings": {
+        "container": "container",
+        "text_alignment": "center",
+        "hide_current": false,
+        "hide_on_mb": false,
+        "animations": "inherit"
+      }
     },
     "main": {
       "type": "main-product",
-      "settings": {
-      },
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
           "settings": {
+            "show_saving": false,
+            "sale_badge_type": "percentage"
+          }
+        },
+        "b4823c68-3369-4b95-8f82-357ca2abda06": {
+          "type": "meta",
+          "settings": {
+            "show_collections": false,
+            "show_vendor": false,
+            "show_type": false,
+            "show_availability": true,
+            "show_sku": false
           }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
+            "size_title": "Size"
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
+            "show_quantity_selector": true,
+            "show_atc_button": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
           }
         },
         "addons": {
           "type": "addons",
           "settings": {
+            "show_atcp": false,
+            "show_ask_a_question": true,
+            "show_social": true
+          }
+        },
+        "134a6b56-a2c0-4807-a496-f4d5f6c1df34": {
+          "type": "shipping",
+          "settings": {
+            "show_delivery_times": true,
+            "deliver_text": "Délai de livraison estimé:",
+            "deliver_days": "4",
+            "date_format": "%b %d",
+            "show_shipping_text": false,
+            "shipping_text": ""
+          }
+        },
+        "4068a7e4-b1c1-4678-9d92-c66ff57ce052": {
+          "type": "custom_text",
+          "settings": {
+            "content": "<ul><li>Livraison<strong> </strong>à domicile avec <strong>COLISSIMO</strong>, <strong>UPS, DHL, TNT</strong> !</li><li>Livraison à domicile à partir de <strong>7 EURO</strong> !</li><li>Satisfait ou rembourser !</li></ul>"
           }
         }
       },
       "block_order": [
         "title",
         "price",
+        "b4823c68-3369-4b95-8f82-357ca2abda06",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
-        "addons"
-      ]
+        "addons",
+        "134a6b56-a2c0-4807-a496-f4d5f6c1df34",
+        "4068a7e4-b1c1-4678-9d92-c66ff57ce052"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 600px) {.m-price__regular span {font-size: 30px; } h1 {font-size: 32px; }}",
+        "h1 {font-weight: 700;}",
+        ".main-product__block-custom_text ul {color: black; padding-left: 20px;}",
+        ".main-product__block-custom_text ul li {margin: 1rem 0;}",
+        ".main-product__block-custom_text {margin-top: 0;}",
+        ".m-product-media {transition: none;}",
+        "responsive-image img {opacity: 1;}",
+        "responsive-image.m-image-loaded img {animation: none;}"
+      ],
+      "settings": {
+        "container": "container",
+        "layout": "layout-6",
+        "show_atwl": true,
+        "enable_history_state": true,
+        "enable_variant_group_images": false,
+        "show_featured_media": true,
+        "show_zoom_button": true,
+        "enable_video_autoplay": false,
+        "show_nav_media_mobile": false,
+        "show_pagination_mobile": true,
+        "use_sticky_atc": true,
+        "use_sticky_atc_on_mobile": true,
+        "enable_dynamic_checkout": false,
+        "sticky_atc_wishtlist": false,
+        "sticky_atc_compare": false
+      }
     },
     "product-details-tabs": {
       "type": "product-details-tabs",
@@ -49,35 +119,81 @@
         "description": {
           "type": "description",
           "settings": {
-            "header": "Product description"
+            "header": "Détails"
+          }
+        },
+        "084a93a9-12a0-4c40-96c9-5c13585af663": {
+          "type": "liquid",
+          "settings": {
+            "header": "Plus d’information",
+            "custom_liquid": "{% assign product_metafields = product.metafields.magento %}\n\n{% if product_metafields %}\n  {% if product_metafields.editions %}\n    <p><span class=\"t-bold\">Marque:</span> {{ product_metafields.editions }}</p>\n  {% endif %}\n  {% if product_metafields.dimensions %}\n    <p><span class=\"t-bold\">Dimensions:</span> {{ product_metafields.dimensions}}</p>\n  {% endif %}\n  {% if product_metafields.couverture %}\n    <p><span class=\"t-bold\">Couverture:</span> {{ product_metafields.couverture}}</p>\n  {% endif %}\n  {% if product_metafields.age_conseille %}\n    <p><span class=\"t-bold\">Âge:</span> {{ product_metafields.age_conseille}}</p>\n  {% endif %}\n  {% if product_metafields.annees %}\n    <p><span class=\"t-bold\">Annees:</span> {{ product_metafields.annees}}</p>\n  {% endif %}\n  {% if product_metafields.valeur_nutrionelle %}\n    <p><span class=\"t-bold\">Valeur Nutrionelle:</span> {{ product_metafields.valeur_nutrionelle}}</p>\n  {% endif %}\n  {% if product_metafields.condition %}\n    <p><span class=\"t-bold\">Condition:</span> {{ product_metafields.condition}}</p>\n  {% endif %}\n  {% if product_metafields.fragrance %}\n    <p><span class=\"t-bold\">Fragrance:</span> {{ product_metafields.fragrance}}</p>\n  {% endif %}\n  {% if product_metafields.genre %}\n    <p><span class=\"t-bold\">Genre:</span> {{ product_metafields.genre}}</p>\n  {% endif %}\n  {% if product_metafields.contenance %}\n    <p><span class=\"t-bold\">Contenance:</span> {{ product_metafields.contenance}}</p>\n  {% endif %}\n{% endif %}\n\n<style>\n.m-tab-content--liquid p {\n  font-weight: 400;\n}\n</style>"
           }
         },
         "tab": {
           "type": "tab",
           "settings": {
-            "header": "Shipping & Return",
-            "content": "<p>Shipping cost is based on weight. Just add products to your cart and use the Shipping Calculator to see the shipping price.</p><p>We want you to be 100% satisfied with your purchase. Items can be returned or exchanged within 30 days of delivery.</p>"
+            "header": "Livraison & Expédition",
+            "content": "<p><strong>Livraison Gratuite à partir de 79 €</strong></p><p>Prix de la livraison :</p><ul><li>Point Relais : 3,99 € </li><li>A domicile : 7,05 € </li></ul><p>Quand vais-je recevoir ma commande  ?</p><ul><li>48/72h en point rélais</li><li>24/48h en livraison à domicile</li></ul>",
+            "content_page": ""
           }
         }
       },
       "block_order": [
         "description",
+        "084a93a9-12a0-4c40-96c9-5c13585af663",
         "tab"
       ],
+      "custom_css": [
+        ".t-bold {font-weight: 600;}",
+        ".m-product-details-tabs .m-tab-content:not(.m-tab-content--reviews) .m-tab-content__inner {color: black;}",
+        ".m-tab-header:after {background-color: #8c4512;}",
+        ".m-tab-header {font-weight: 700;}",
+        "@media only screen and (min-width: 768px) {.m-tab-content__inner h2 {font-size: 24px; } .m-tab-header {font-size: 24px; }}",
+        "@media only screen and (max-width: 767px) {.m-tab-content__inner h2 {font-size: 18px; } .m-accordion--item.open .m-accordion--item-content.max-height-set {max-height: max-content; }}"
+      ],
       "settings": {
-        "show_product_tabs": true,
         "container": "container",
-        "bg_color": ""
+        "bg_color": "",
+        "default_open": true,
+        "animations": "inherit"
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "custom_css": [
+        "h3 {font-size: 16px;}",
+        "@media only screen and (min-width: 600px) {h2 {font-size: 32px; }}",
+        "h2 {font-weight: 700; letter-spacing: 1px; text-transform: capitalize;}"
+      ],
       "settings": {
+        "container": "container",
+        "heading": "Vous Pourriez Aussi Aimer",
+        "heading_size": "h3",
+        "text_align": "left",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": 30,
+        "enable_slider": true,
+        "use_scroll_mobile": true,
+        "animations": "inherit"
       }
     },
     "recent-viewed-products": {
       "type": "recent-viewed-products",
+      "custom_css": [
+        "h3 {font-size: 16px;}",
+        "@media only screen and (min-width: 600px) {h2 {font-size: 32px; }}",
+        "h2 {font-weight: 700; letter-spacing: 1px; text-transform: capitalize;}"
+      ],
       "settings": {
+        "container": "container",
+        "heading": "Derniers Produits Consultés",
+        "heading_size": "h3",
+        "text_align": "left",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": 30,
+        "enable_slider": true
       }
     }
   },

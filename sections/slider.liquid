@@ -23,7 +23,7 @@
   assign slider_pagination_class = 'm-dot-circle m-dot-circle--' | append: section.settings.dots_color
   if section.settings.dots_position != 'bottom'
     assign slider_pagination_class = slider_pagination_class | append: ' swiper-pagination--vertical'
-  endif 
+  endif
   assign slider_controls_position = section.settings.dots_position | replace: 'bottom', 'bottom-center' | replace: 'left', 'middle-left' | replace: 'right', 'middle-right'
 
   assign slider_controls_class = ''
@@ -36,23 +36,25 @@
     assign slider_controls_class = slider_controls_class | append: ' m-slider-controls--pagination-' | append: section.settings.dots_position
   endif
 
-  assign dots_color = "#222222"
+  assign dots_color = '#222222'
   if section.settings.dots_color == 'light'
-    assign dots_color = "#ffffff"
+    assign dots_color = '#ffffff'
   endif
 %}
 
-<section 
+<section
   id="m-slider-{{ section.id }}"
   class="m-section m-slider m-slider--{{ section.settings.slideshow_height }} {% unless use_content_above %} m-slider--content-stack{% endunless %} {{ section.settings.custom_class }}"
-  data-section-type="slider" data-section-id="{{ section.id }}"
-  style="--data-autoplay-speed: {{ section.settings.autorotate_speed }}s;">
+  data-section-type="slider"
+  data-section-id="{{ section.id }}"
+  style="--data-autoplay-speed: {{ section.settings.autorotate_speed }}s;"
+>
   <div class="{{ container }}">
     <m-slideshow
       class="m:block {{ slider_controls_class }}"
       data-id="{{ section.id }}"
       data-autoplay="{% if request.design_mode %}false{% else %}{{ section.settings.autorotate }}{% endif %}"
-      data-autoplay-speed="{{ section.settings.autorotate_speed }}" 
+      data-autoplay-speed="{{ section.settings.autorotate_speed }}"
       data-enable-arrows="{{ section.settings.show_arrows }}"
       data-enable-dots="{{ section.settings.show_dots }}"
       data-slide-height="{{ section.settings.slideshow_height }}"
@@ -71,14 +73,14 @@
               if block.settings.title != blank or block.settings.subheading != blank or block.settings.description != blank or block.settings.button_text != blank
                 assign should_show_content = true
               endif
-    
+
               assign content_container = 'container-fluid'
               if block.settings.content_in_container == true
                 assign content_container = 'container'
               endif
-    
+
               assign video_urls = block.settings.video | newline_to_br | split: '<br />'
-    
+
               assign bg_image = block.settings.background
               if block.settings.mb_background != blank
                 assign bg_image = block.settings.mb_background
@@ -101,7 +103,7 @@
                 assign colorBtnHover = '#000'
               endif
             %}
-  
+
             {% capture video_bg %}
             <video playsinline muted autoplay loop preload="auto">
               {% for video in video_urls %}
@@ -124,29 +126,34 @@
               {{ 'sections.slider.video.notice' }}
             </video>
             {% endcapture %}
-            
-            <div {{ block.shopify_attributes }} 
+
+            <div
+              {{ block.shopify_attributes }}
               data-slide="{{ forloop.index0 }}"
               class="swiper-slide"
               data-slide-type="{{ block.type }}"
             >
               <div class="m-slide m-slide--{{ text_vertical_alignment }}-{{ text_horizontal_alignment }} m-slide--text-{{ block.settings.text_size }}{% if image_link != blank %} m-slide--has-link{% endif %}">
-                <div 
-                  class="m-slide__media" 
+                <div
+                  class="m-slide__media"
                   {% if section.settings.slideshow_height == 'adapt' %}
-                  style="--aspect-ratio: {{ aspect_ratio }}; --aspect-ratio-mobile: {{ aspect_ratio_mobile }}"
+                    style="--aspect-ratio: {{ aspect_ratio }}; --aspect-ratio-mobile: {{ aspect_ratio_mobile }}"
                   {% endif %}
                 >
                   {% if image_link != blank %}
-                  <a href="{{ image_link }}" class="m-hidden-link"></a>
+                    <a href="{{ image_link }}" class="m-hidden-link"></a>
                   {% endif %}
-    
+
                   {% comment %} Image on desktop {% endcomment %}
                   <div class="m:hidden md:m:block">
                     <div class="m-slide__bg{% if block.settings.background == blank and block.settings.video == blank %} m-slide__placeholder{% endif %}">
                       {% if block.settings.background == blank and block.settings.video == blank %}
                         {% capture current %}{% cycle 1, 2 %}{% endcapture %}
-                        {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'm-placeholder-svg m:w-full m:h-full' }}
+                        {{
+                          'lifestyle-'
+                          | append: current
+                          | placeholder_svg_tag: 'm-placeholder-svg m:w-full m:h-full'
+                        }}
                       {% else %}
                         {% if block.type == 'video_slide' %}
                           {{ video_bg }}
@@ -157,26 +164,37 @@
                             unless forloop.first
                               assign lazy_load = 'lazy'
                             endunless
-                          -%} 
-                          {{ block.settings.background | image_url: width: 3840 | image_tag:
-                            loading: lazy_load,
-                            width: block.settings.background.width,
-                            height: image_height,
-                            sizes: '100vw',
-                            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-                            alt: block.settings.background.alt | escape
+                          -%}
+                          {{
+                            block.settings.background
+                            | image_url: width: 3840
+                            | image_tag:
+                              loading: lazy_load,
+                              width: block.settings.background.width,
+                              height: image_height,
+                              sizes: '100vw',
+                              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                              alt: block.settings.background.alt
+                            | escape
                           }}
                         {% endif %}
                       {% endif %}
                     </div>
                   </div>
-    
+
                   {% comment %} Image on mobile {% endcomment %}
                   <div class="md:m:hidden">
-                    <div class="m-slide__bg--mobile{% if bg_image == blank and block.settings.video == blank %} m-slide__placeholder{% endif %}" style="--aspect-ratio-mobile: {{ aspect_ratio_mobile }}">
+                    <div
+                      class="m-slide__bg--mobile{% if bg_image == blank and block.settings.video == blank %} m-slide__placeholder{% endif %}"
+                      style="--aspect-ratio-mobile: {{ aspect_ratio_mobile }}"
+                    >
                       {% if bg_image == blank and block.settings.video == blank %}
                         {% capture current %}{% cycle 1, 2 %}{% endcapture %}
-                        {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'm-placeholder-svg m:w-full m:h-full' }}
+                        {{
+                          'lifestyle-'
+                          | append: current
+                          | placeholder_svg_tag: 'm-placeholder-svg m:w-full m:h-full'
+                        }}
                       {% else %}
                         {% if block.type == 'video_slide' and bg_image == blank %}
                           {{ video_bg }}
@@ -188,13 +206,17 @@
                               assign lazy_load = 'lazy'
                             endunless
                           -%}
-                          {{ bg_image | image_url: width: 1100 | image_tag:
-                            loading: lazy_load,
-                            width: bg_image.width,
-                            height: bg_image_height,
-                            sizes: '100vw',
-                            widths: '375, 550, 750, 1100',
-                            alt: bg_image.alt | escape
+                          {{
+                            bg_image
+                            | image_url: width: 1100
+                            | image_tag:
+                              loading: lazy_load,
+                              width: bg_image.width,
+                              height: bg_image_height,
+                              sizes: '100vw',
+                              widths: '375, 550, 750, 1100',
+                              alt: bg_image.alt
+                            | escape
                           }}
                           {% if image_link != blank %}
                             <a href="{{ image_link }}" class="m-hidden-link"></a>
@@ -207,7 +229,7 @@
                     <div class="m-slide__overlay"></div>
                   {% endif %}
                 </div>
-    
+
                 {% if should_show_content %}
                   {%- liquid
                     assign button_style = block.settings.button_style | replace: 'sf__btn-secondary', 'm-button--secondary' | replace: 'sf__btn-primary', 'm-button--primary' | replace: 'sf__btn-white', 'm-button--white' | replace: 'sf__btn-link', 'm-button--link'
@@ -218,72 +240,96 @@
                   >
                     <div class="m-slide__content m-richtext m:text-{{ text_alignment }}">
                       {% if block.settings.subheading != blank %}
-                        <div class="m-richtext__subtitle m-slide__subtitle m:text-{{ text_color }} {{ sub_text_size }}">{{ block.settings.subheading }}</div>
+                        <div class="m-richtext__subtitle m-slide__subtitle m:text-{{ text_color }} {{ sub_text_size }}">
+                          {{ block.settings.subheading }}
+                        </div>
                       {% endif %}
-    
+
                       {% if block.settings.title != blank %}
-                        <h2 class="m-richtext__title m-slide__title m:text-{{ text_color }} {{ heading_text_size }}">{{ block.settings.title }}</h2>
+                        <h1 class="m-richtext__title m-slide__title m:text-{{ text_color }} {{ heading_text_size }}">
+                          {{ block.settings.title }}
+                        </h1>
                       {% endif %}
-    
+
                       {% if block.settings.description != blank %}
-                        <div class="m-richtext__description m-slide__description m:text-{{ text_color }} {{ sub_text_size }}">{{ block.settings.description }}</div>
+                        <div class="m-richtext__description m-slide__description m:text-{{ text_color }} {{ sub_text_size }}">
+                          {{ block.settings.description }}
+                        </div>
                       {% endif %}
-    
+
                       {% if block.settings.button_text != blank %}
                         <div class="m-richtext__button m-slide__button">
-                          <a href="{{ block.settings.button_link | default: "#" }}" class="m-button {{ button_style }} {{ block.settings.button_size }}">{{ block.settings.button_text }}</a>
+                          <a
+                            href="{{ block.settings.button_link | default: "#" }}"
+                            class="m-button {{ button_style }} {{ block.settings.button_size }}"
+                          >
+                            {{- block.settings.button_text -}}
+                          </a>
                         </div>
                       {% endif %}
                     </div>
                   </div>
                 {% endif %}
-    
+
                 {% if block.settings.show_footer %}
-                  <div 
+                  <div
                     class="m-slider__footer m-slider__footer--{{ footer_alignment }} {{ content_container }} m:flex m:items-center m:justify-{{ footer_alignment }} m:text-{{ block.settings.text_color }}"
                     style="--btn-color: {{ colorBtn }};"
                   >
                     <span>{{ block.settings.footer_text }}</span>
                     {% if block.settings.footer_link != blank %}
-                    <span>|</span>
-                    <a href="{{ block.settings.footer_link | default: "#" }}" class="m-button m-button--link">
-                      {{ block.settings.footer_button }}
-                    </a>
+                      <span>|</span>
+                      <a href="{{ block.settings.footer_link | default: "#" }}" class="m-button m-button--link">
+                        {{ block.settings.footer_button }}
+                      </a>
                     {% endif %}
                   </div>
                 {% endif %}
               </div>
-            </div><!-- .swiper-slide -->
+            </div>
+            <!-- .swiper-slide -->
           {% endfor %}
-        </div><!-- .swiper-wrapper -->
-      {% if section.blocks.size > 1 %}
+        </div>
+        <!-- .swiper-wrapper -->
+        {% if section.blocks.size > 1 %}
           {% if section.settings.show_dots or section.settings.show_arrows %}
-            <div class="m-slider-controls m-slider-controls--absolute {{ slider_controls_class }} m-slider-controls--{{ slider_controls_position }}" style="--swiper-controls-color: {{ dots_color }};">
+            <div
+              class="m-slider-controls m-slider-controls--absolute {{ slider_controls_class }} m-slider-controls--{{ slider_controls_position }}"
+              style="--swiper-controls-color: {{ dots_color }};"
+            >
               <div class="m-slider-controls__wrapper">
                 {% if section.settings.show_arrows %}
-                <button class="m-slider-controls__button m-slider-controls__button-prev swiper-button-prev" aria-label="Previous">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25 30L15 20L25 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
+                  <button
+                    class="m-slider-controls__button m-slider-controls__button-prev swiper-button-prev"
+                    aria-label="Previous"
+                  >
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M25 30L15 20L25 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
                 {% endif %}
                 {% if section.settings.show_dots %}
-                    <div class="swiper-pagination m:w-full {{ slider_pagination_class }}"></div>
+                  <div class="swiper-pagination m:w-full {{ slider_pagination_class }}"></div>
                 {% endif %}
                 {% if section.settings.show_arrows %}
-                <button class="m-slider-controls__button m-slider-controls__button-next swiper-button-next" aria-label="Next">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 30L25 20L15 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
+                  <button
+                    class="m-slider-controls__button m-slider-controls__button-next swiper-button-next"
+                    aria-label="Next"
+                  >
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 30L25 20L15 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
                 {% endif %}
               </div>
             </div>
           {% endif %}
         {% endif %}
-      </div><!-- .swiper-container -->
+      </div>
+      <!-- .swiper-container -->
     </m-slideshow>
-  </div><!-- End section container -->
+  </div>
+  <!-- End section container -->
 </section>
 
 {% schema %}
